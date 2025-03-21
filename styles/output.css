@@ -7,15 +7,9 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
-    --color-orange-300: oklch(0.837 0.128 66.29);
-    --color-orange-400: oklch(0.75 0.183 55.934);
-    --color-orange-500: oklch(0.705 0.213 47.604);
-    --color-orange-600: oklch(0.646 0.222 41.116);
     --color-orange-800: oklch(0.47 0.157 37.304);
-    --color-amber-300: oklch(0.879 0.169 91.605);
     --color-green-600: oklch(0.627 0.194 149.214);
     --color-zinc-900: oklch(0.21 0.006 285.885);
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-7xl: 80rem;
@@ -366,9 +360,6 @@
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
   }
-  .mt-1 {
-    margin-top: calc(var(--spacing) * 1);
-  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -494,9 +485,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1140,14 +1128,8 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
-  .bg-black {
-    background-color: var(--color-black);
-  }
   .bg-green-600 {
     background-color: var(--color-green-600);
-  }
-  .bg-orange-500 {
-    background-color: var(--color-orange-500);
   }
   .bg-orange-800 {
     background-color: var(--color-orange-800);
@@ -1345,17 +1327,11 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
-  .py-0 {
-    padding-block: calc(var(--spacing) * 0);
-  }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
-  }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
   }
   .text-center {
     text-align: center;
@@ -1402,10 +1378,6 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
   .text-4xl {
     font-size: var(--text-4xl);
@@ -1499,18 +1471,6 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
-  }
-  .text-amber-300 {
-    color: var(--color-amber-300);
-  }
-  .text-orange-300 {
-    color: var(--color-orange-300);
-  }
-  .text-orange-400 {
-    color: var(--color-orange-400);
-  }
-  .text-orange-600 {
-    color: var(--color-orange-600);
   }
   .text-white {
     color: var(--color-white);
@@ -1981,20 +1941,6 @@
       }
     }
   }
-  .hover\:rotate-2 {
-    &:hover {
-      @media (hover: hover) {
-        rotate: 2deg;
-      }
-    }
-  }
-  .hover\:bg-orange-800 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-orange-800);
-      }
-    }
-  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2004,6 +1950,11 @@
     @media (width >= 48rem) {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 }
