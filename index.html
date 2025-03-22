@@ -27,6 +27,12 @@
 
     <!-- INICIO MENU-->
     <div id="menu">
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Hamburguers
+            </h2>
+        </div>
+        <!-- GRID HAMBURGUERS -->
         <main class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-auto max-w-7xl">
 
             <!-- INICIO PRODUTO ITEM-->
@@ -114,7 +120,75 @@
             <!-- FIM PRODUTO ITEM-->
             
         </main>
+        <!-- FIM GRID HAMBURGUERS -->
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Bebidas
+            </h2>
+        </div>
+
+        <!-- GRID BEBIDAS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-auto max-w-7xl">
+            
+            <!-- INICIO PRODUTO ITEM-->
+            <div class="flex gap-2 w-full">
+                <img src="assets/img_produtos/refri-1.png" alt="hamburguer smash"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                <div class="w-full">
+                    <p class="font-bold">Coca Lata</p>
+                    <p class="text-sm"> Pão levinho de fermentação natural da Trigou, burguer 160gg, queijo prato e maionese da casa.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold">R$6,00</p>
+                        <button 
+                            class="px-5 py-0.5 bg-orange-800 rounded add-to-cart-btn"
+                            data-name="coca lata"
+                            data-prince="6.00"
+                            ><!--add-to-cart-btn = é uma classe para add no javascrypt-->
+                            <i class="bi bi-cart-check-fill text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM-->
+
+            <!-- INICIO PRODUTO ITEM-->
+            <div class="flex gap-2 w-full">
+                <img src="assets/img_produtos/refri-2.png" alt="hamburguer smash"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                <div class="w-full">
+                    <p class="font-bold">Guaraná Lata</p>
+                    <p class="text-sm"> Pão levinho de fermentação natural da Trigou, burguer 160gg, queijo prato e maionese da casa.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold">R$6,00</p>
+                        <button 
+                            class="px-5 py-0.5 bg-orange-800 rounded add-to-cart-btn"
+                            data-name="lata lata"
+                            data-prince="6.00"
+                            ><!--add-to-cart-btn = é uma classe para add no javascrypt-->
+                            <i class="bi bi-cart-check-fill text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM-->
+        </div>
+        <!-- FIM GRID BEBIDAS -->
+        
     </div>
     <!-- FIM MENU-->
+    <div class="my-4 h-2.5"></div>
+    <!-- INÍCIO BUTTON CART FOOTER-->
+    <footer class="w-full bg-red-800 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button 
+            class="flex items-center gap-2 text-white font-bold"
+            id="cart-btn"    
+        >
+            (<span id="cart-count">2</span>)
+            Ver meu carrinho
+            <i class="bi bi-cart-check text-white font-bold"></i>
+        </button>
+    </footer>
+    <!-- FIM BUTTON CART FOOTER-->
 </body>
 </html>
